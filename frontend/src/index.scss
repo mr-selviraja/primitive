@@ -1,0 +1,33 @@
+// Colors
+$primary-light: #f3eadd;
+$primary: #bea48e;
+$primary-dark: #7b6c5b;
+$light: #f7f7f7;
+$white: #ffffff;
+$dark: #484848;
+$black: #2b2b2b;
+$grey: #ededed;
+
+/****************** ALL THE OVERRIDES MUST GO ABOVE THIS LINE ******************/
+
+// Import bootstrap styles
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// Import google fonts
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Mukta:wght@200;400;700&display=swap');
+
+// Custom styles
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Mukta', Tahoma, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+// utility classes
+.font-accent {
+  font-family: 'Cinzel Decorative', Georgia, sans-serif;
+}
