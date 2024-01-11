@@ -11865,8 +11865,15 @@ body {
   font-family: "Mukta", Tahoma, sans-serif;
   font-size: 1.4rem;
   line-height: 1.6;
+  background-color: #f3eadd;
+  color: #2b2b2b;
+  font-weight: 400;
 }
 
 .font-accent {
   font-family: "Cinzel Decorative", Georgia, sans-serif;
+}
+
+.bg-primary-dark {
+  background-color: #7b6c5b;
 }

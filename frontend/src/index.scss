@@ -25,9 +25,16 @@ body {
   font-family: 'Mukta', Tahoma, sans-serif;
   font-size: 1.4rem;
   line-height: 1.6;
+  background-color: $primary-light;
+  color: $black;
+  font-weight: 400;
 }
 
 // utility classes
 .font-accent {
   font-family: 'Cinzel Decorative', Georgia, sans-serif;
+}
+
+.bg-primary-dark {
+  background-color: $primary-dark;
 }
