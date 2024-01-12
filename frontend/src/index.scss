@@ -6,7 +6,8 @@ $light: #f7f7f7;
 $white: #ffffff;
 $dark: #484848;
 $black: #2b2b2b;
-$grey: #ededed;
+$gray: #ededed;
+$gray-dark: #c5c5c5;
 
 /****************** ALL THE OVERRIDES MUST GO ABOVE THIS LINE ******************/
 
@@ -16,7 +17,7 @@ $grey: #ededed;
 // Import google fonts
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Mukta:wght@200;400;700&display=swap');
 
-// Custom styles
+/****** Default styles ******/
 html {
   font-size: 62.5%;
 }
@@ -30,11 +31,60 @@ body {
   font-weight: 400;
 }
 
-// utility classes
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/****** Utility classes ******/
 .font-accent {
   font-family: 'Cinzel Decorative', Georgia, sans-serif;
 }
 
+// background colors
 .bg-primary-dark {
   background-color: $primary-dark;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+// text colors
+.text-gray-dark {
+  color: $gray-dark;
+}
+
+// font sizes
+.text-small {
+  font-size: 1.25rem;
+}
+
+// font weights
+.text-w-light {
+  font-weight: 200;
+}
+
+.text-w-bold {
+  font-weight: 700;
+}
+
+// footer
+.footer {
+  margin-bottom: -0.5rem;
+
+  &__links {
+    gap: 7.5rem;
+  }
+}
+
+/****** Media queries ******/
+@media screen and (max-width: 548px) {
+  .footer {
+    &__links {
+      flex-direction: column !important;
+      gap: 1.5rem !important;
+    }
+  }
 }

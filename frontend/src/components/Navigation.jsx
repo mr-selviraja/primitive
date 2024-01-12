@@ -3,18 +3,15 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 
 const Navigation = () => {
   return (
-    <Navbar
-      bg='white'
-      expand='lg'
-      className='p-4 shadow-sm position-sticky top-0'
-    >
+    <Navbar bg='white' expand='lg' className='p-4 shadow-sm'>
       <Container>
         <Navbar.Brand>
           <img
             width={90}
-            src='/assets/primitive-logo.svg'
+            src='/assets/primitive-logo-primary-dark.svg'
             alt='primitive logo'
           />
+          <h1 className='d-none'>Primitive</h1>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls='navbar-nav' />

@@ -2,15 +2,18 @@ import React from 'react';
 import Navigation from './components/Navigation';
 import Notification from './components/Notification';
 import { Container } from 'react-bootstrap';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
     <>
-      <Notification />
-      <Navigation />
+      <header className='position-sticky top-0'>
+        <Notification />
+        <Navigation />
+      </header>
 
       <Container className='p-4'>
-        <p>
+        <p className='mb-0'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ea
           laboriosam laudantium nam perspiciatis delectus voluptas enim,
           quibusdam qui illum, eligendi ducimus quas fugiat. Laudantium
@@ -126,6 +129,8 @@ const App = () => {
           dicta quibusdam!
         </p>
       </Container>
+
+      <Footer />
     </>
   );
 };
