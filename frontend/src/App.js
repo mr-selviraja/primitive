@@ -7,6 +7,7 @@ import EditorsPick from './components/EditorsPick';
 import ProductList from './components/ProductList';
 import products from './data';
 import Separator from './components/Separator';
+import ContactUs from './components/ContactUs';
 
 const App = () => {
   return (
@@ -45,6 +46,10 @@ const App = () => {
 
         <ProductList products={products} productListTitle={'Books'} />
       </Container>
+
+      <Separator />
+
+      <ContactUs />
 
       <Footer />
     </>

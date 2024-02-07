@@ -3,7 +3,9 @@ import React from 'react';
 const EditorsPick = () => {
   return (
     <section className='editors-pick mb-5'>
-      <h2 className='font-accent text-w-bold text-center'>Editor's Pick</h2>
+      <h2 className='font-accent text-w-bold text-center mb-5'>
+        Editor's Pick
+      </h2>
 
       <div className='editors-pick__grid'>
         <div

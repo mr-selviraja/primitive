@@ -3,6 +3,10 @@ import { Button } from 'react-bootstrap';
 import { AiFillThunderbolt } from 'react-icons/ai';
 import { IoCart } from 'react-icons/io5';
 
+const getDiscountedPrice = (price, discount) => {
+  return Math.round(price - price * (discount / 100));
+};
+
 const ProductListItem = ({ product }) => {
   return (
     <article className='product-list__item bg-light'>
@@ -15,11 +19,13 @@ const ProductListItem = ({ product }) => {
       <h4 className='text-w-bold font-accent text-center'>{product.title}</h4>
 
       <div className='d-flex justify-content-center gap-4'>
-        <p className='text-w-bold'>Rs. {product.price}</p>
+        <p className='text-w-bold'>
+          Rs. {getDiscountedPrice(product.price, product.discount)}
+        </p>
 
         <p className='text-linethrough'>Rs.{product.price}</p>
 
-        <p className='text-primary'>50% off</p>
+        <p className='text-primary'>{product.discount}% off</p>
       </div>
       <Button
         size='lg'
